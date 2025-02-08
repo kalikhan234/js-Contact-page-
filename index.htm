@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" aria-labelledby="contactFormHeading" novalidate>
+            <input type="text" name="name" id="name" placeholder="Your Name" required aria-required="true">
+            <input type="email" name="email" id="email" placeholder="Your Email" required aria-required="true" aria-invalid="false">
+            <textarea name="message" id="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="successMessage" class="success-message" role="alert">
+            Thank you! Your message has been sent.
+        </div>
+        <div id="errorMessage" class="error-message" role="alert">
+            Please fill out all required fields correctly.
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
